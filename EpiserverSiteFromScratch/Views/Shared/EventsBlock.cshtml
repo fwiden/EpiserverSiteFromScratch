@@ -1,0 +1,45 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@model EpiserverSiteFromScratch.Models.Blocks.EventsBlock
+
+    <div class="events_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="main_title">
+                        <h2 class="mb-3 text-white">@Html.PropertyFor(x =>x.Header)</h2>
+                        <p>
+                            @Html.PropertyFor(x=>x.Text)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="single_event position-relative">
+                        <div class="event_thumb">
+                            @*<img src="img/event/e1.jpg" alt="" />*@
+                            @Html.PropertyFor(x=>x.Image)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6">
+                    <div class="single_event position-relative">
+                        <div class="event_thumb">
+                            @Html.PropertyFor(x=>x.Image2)
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-lg-12">
+                    <div class="text-center pt-lg-5 pt-3">
+                        <a href="#" class="event-link">
+                            View All Event <img src="~/Static/prev.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================ End Events Area =================-->
