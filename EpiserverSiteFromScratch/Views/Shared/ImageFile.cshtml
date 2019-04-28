@@ -1,0 +1,6 @@
+﻿@model EpiserverSiteFromScratch.Models.Media.ImageFile
+
+@if (Model != null) 
+{
+    <img src="@Url.ContentUrl(Model.ContentLink)" alt="@Model.Description" class="img-fluid">
+}

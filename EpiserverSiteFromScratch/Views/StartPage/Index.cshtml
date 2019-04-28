@@ -1,0 +1,20 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model EpiserverSiteFromScratch.Models.ViewModels.PageViewModel<EpiserverSiteFromScratch.Models.Pages.StartPage>
+
+@*@{
+    Layout = "~/Views/Shared/Layouts/_Root.cshtml";
+}*@
+
+<div class="col">
+        <h1 @Html.EditAttributes(x => x.CurrentPage.Heading)>@(Model.CurrentPage.Heading ?? Model.CurrentPage.Name)</h1>
+            @Html.PropertyFor(x => x.CurrentPage.Maincontentarea)
+
+    </div>
+
+
+
+<style>
+    h1 { margin-top: 2em;}
+</style>
