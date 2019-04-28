@@ -4,7 +4,7 @@ using EPiServer.DataAnnotations;
 using EPiServer.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace AlloyTraining.Models.Blocks
+namespace EpiserverSiteFromScratch.Models.Blocks
 {
     [ContentType(DisplayName = "Teaser",
         GroupName = "Text",

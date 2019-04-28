@@ -1,10 +1,10 @@
-﻿using AlloyTraining.Models.Blocks;
-using AlloyTraining.Models.ViewModels;
-using EPiServer.Web.Mvc;
+﻿using EPiServer.Web.Mvc;
+using EpiserverSiteFromScratch.Models.Blocks;
+using EpiserverSiteFromScratch.Models.ViewModels;
 using System;
 using System.Web.Mvc;
 
-namespace AlloyTraining.Controllers
+namespace EpiserverSiteFromScratch.Controllers
 {
     public class TeaserBlockController : BlockController<TeaserBlock>
     {

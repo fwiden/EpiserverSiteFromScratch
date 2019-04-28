@@ -1,6 +1,6 @@
-﻿using AlloyTraining.Models.Blocks;
+﻿using EpiserverSiteFromScratch.Models.Blocks;
 
-namespace AlloyTraining.Models.ViewModels
+namespace EpiserverSiteFromScratch.Models.ViewModels
 {
     public class TeaserBlockViewModel
     {
