@@ -1,0 +1,16 @@
+﻿@using System.Web.WebSockets
+@model EpiserverSiteFromScratch.Models.Blocks.JumboTronBlock
+
+<div class="col jumbotronBlock">
+    @Html.PropertyFor(x =>x.TeaserImage, new{@CssClassPropertyAttribute="img-fluid"})
+</div>
+
+<style>
+    .jumbotronBlock img {
+        max-width: 100vw;
+        /*width: 100vw;*/
+        margin: 0 calc(-50vv +50%);
+        max-height: 30vw;
+        object-fit: cover;
+    }
+</style>

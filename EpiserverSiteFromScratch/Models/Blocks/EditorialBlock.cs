@@ -3,7 +3,7 @@ using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using System.ComponentModel.DataAnnotations;
 
-namespace AlloyTraining.Models.Blocks
+namespace EpiserverSiteFromScratch.Models.Blocks
 {
     [ContentType(DisplayName = "Editorial",
         GroupName = "Textblock",
